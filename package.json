@@ -4,8 +4,7 @@
   "version": "0.1.1",
   "keywords": ["menu", "ui"],
   "dependencies": {
-    "emitter-component": "*",
-    "jquery-component": "*"
+    "emitter-component": "*"
   },
   "component": {
     "styles": ["menu.css"],

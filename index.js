@@ -4,7 +4,7 @@
  */
 
 var Emitter = require('emitter')
-  , o = require('jquery');
+  , o = require('zepto');
 
 /**
  * Expose `Menu`.
@@ -31,7 +31,7 @@ function Menu() {
   Emitter.call(this);
   this.items = {};
   this.el = o('<ul class=menu>').hide().appendTo('body');
-  this.el.hover(this.deselect.bind(this));
+  this.el.on('mouseover', this.deselect.bind(this));
   o('html').click(this.hide.bind(this));
   this.on('show', this.bindKeyboardEvents.bind(this));
   this.on('hide', this.unbindKeyboardEvents.bind(this));
