@@ -263,5 +263,6 @@ function createSlug(str) {
   return String(str)
     .toLowerCase()
     .replace(/ +/g, '-')
+    .replace(/[\\\[\]\!\@\#\$\%\^\&\*\(\)\+\{\}\"\'\;\:\,\/\?\|]+/g, '-')
     .replace(/[^a-z0-9-]/g, '');
 }
