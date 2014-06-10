@@ -1,3 +1,12 @@
+0.1.3 / 2014-06-10
+==================
+
+  * also emit the event text, not just the slug
+
+0.1.2 / 2014-06-10
+==================
+
+  * ensure that slugs do not contain invalid CSS class name characters
 
 0.1.1 / 2012-10-19 
 ==================
